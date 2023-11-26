@@ -1,1 +1,20 @@
-<p>pregunta-uno works!</p>
+<div class="container">
+    <h1>Estacionamiento</h1>
+    <form (ngSubmit)="calcularTotal()">
+        <mat-form-group>
+            <mat-label>Horas:</mat-label>
+            <input type="number" matInput class="form-control" id="horas" [(ngModel)]="horas">
+        </mat-form-group>
+
+        <mat-form-group>
+            <mat-label>Minutos:</mat-label>
+            <input type="number" matInput class="form-control" id="minutos" [(ngModel)]="minutos">
+        </mat-form-group>
+
+        <button type="submit" mat-raised-button color="primary">Calcular</button>
+    </form>
+
+    <div class="total">
+        Total: {{total | currency}}
+    </div>
+</div>

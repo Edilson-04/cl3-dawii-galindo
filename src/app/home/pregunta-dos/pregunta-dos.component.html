@@ -1,1 +1,10 @@
-<p>pregunta-dos works!</p>
+<h1>Notas</h1>
+
+<input type="number" placeholder="Nota 1" [(ngModel)]="notas[0]">
+<input type="number" placeholder="Nota 2" [(ngModel)]="notas[1]">
+<input type="number" placeholder="Nota 3" [(ngModel)]="notas[2]">
+<input type="number" placeholder="Nota 4" [(ngModel)]="notas[3]">
+
+<button (click)="calcularPromedio()">Calcular</button>
+
+<p>Promedio: {{promedio}}</p>
