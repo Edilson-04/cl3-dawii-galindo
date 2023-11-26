@@ -13,14 +13,14 @@ export class HomeComponent {
   }
 
   onNavigateToPregunta1(): void {
-    this.router.navigate(['pregunta1'], { relativeTo: this.route });
+    this.router.navigate(['preguntauno'], { relativeTo: this.route });
   }
 
   onNavigateToPregunta2(): void {
-    this.router.navigate(['pregunta2'], { relativeTo: this.route });
+    this.router.navigate(['preguntados'], { relativeTo: this.route });
   }
 
   onNavigateToPregunta3(): void {
-    this.router.navigate(['pregunta3'], { relativeTo: this.route });
+    this.router.navigate(['preguntatres'], { relativeTo: this.route });
   }
 }

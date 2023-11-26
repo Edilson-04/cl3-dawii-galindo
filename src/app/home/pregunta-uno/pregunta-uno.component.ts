@@ -19,22 +19,20 @@ import { MatButton } from '@angular/material/button';
 })
 export class PreguntaUnoComponent {
 
-  objEstacionamiento = {
-    horas: 0,
-    minutos: 0,
-    total: 0
-  }
+  horas: number = 0;
+  minutos: number = 0;
+  total: number = 0;
 
   constructor() { }
 
   ngOnInit() {
-    this.objEstacionamiento.total = 0;
+    this.total = 0;
   }
 
   calcularTotal() {
-    this.objEstacionamiento.total = this.objEstacionamiento.horas * 1500;
-    if (this.objEstacionamiento.minutos > 0) {
-      this.objEstacionamiento.total += (this.objEstacionamiento.minutos / 60) * 1500;
+    this.total = this.horas * 1500;
+    if (this.minutos > 0) {
+      this.total += (this.minutos / 60) * 1500;
     }
   }
 
