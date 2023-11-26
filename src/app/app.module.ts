@@ -11,6 +11,7 @@ import { PreguntaUnoComponent } from './home/pregunta-uno/pregunta-uno.component
 import { PreguntaDosComponent } from './home/pregunta-dos/pregunta-dos.component';
 import { PreguntaTresComponent } from './home/pregunta-tres/pregunta-tres.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { RouterModule } from '@angular/router';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    FormsModule,
     HttpClientModule,
     RouterModule.forRoot([
       {
